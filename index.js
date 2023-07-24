@@ -28,7 +28,7 @@ app.post("/api/addbtn", async (req, res) => {
     return res.status(400).json({ success: false, error: error.message });
   }
 });
-
+//get api:
 app.get("/api/getpatient", async (req, res) => {
   try {
     const patient = await patientmodel.find();
